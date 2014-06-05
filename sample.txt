@@ -1,0 +1,20 @@
+sample.txt
+==========
+
+# Création des fichiers sample.txt et sample2.txt
+# On ajoute à la zone d’attente tout ce qu’il y a dans le répertoire actif
+# -> git add .
+
+# On se rend compte que les modification de sample.txt et sample2.txt
+# doivent faire l’objet de commits dans des snapshots différents
+
+# On retire sample2.txt de la zone d’attente
+# -> git reset sample2.txt
+
+# On ne fait de commit que pour sample.txt
+# -> git commit -m "Ajout sample.txt"
+
+# On fait un commit de sample2.txt dans un autre snapshot
+# -> git add sample.txt
+# -> git commit -m "Modification de sample2.txt"
+
